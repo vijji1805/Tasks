@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     echo "My Image is ${VERSION}"
-                    sh 'docker build -t ravi2krishna/php-hello:${VERSION} .'    
+                    sh 'docker build -t vijayavadlamudi/php-hello:${VERSION} .'    
                 }
                 
             }
@@ -20,8 +20,8 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker-cred', passwordVariable: 'REGISTRY_PWD', usernameVariable: 'REGISTRY_USER')]) {
                     sh 'docker login -u=$REGISTRY_USER -p=$REGISTRY_PWD'    
-                    sh 'docker push ravi2krishna/php-hello:${VERSION}'
-                    sh 'docker service update --image ravi2krishna/php-hello:${VERSION} php-hello'
+                    sh 'docker push vijayavadlamudi/php-hello:${VERSION}'
+                    sh 'docker service update --image vijayavadlamudi/php-hello:${VERSION} php-hello'
                 }
             }
         }
