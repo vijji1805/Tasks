@@ -8,7 +8,6 @@
 echo "Hello World!";
 echo "New Update!";
 echo "credentials added!";
-echo "new line added!";
 ?> 
 
 </body>
