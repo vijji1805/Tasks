@@ -7,7 +7,6 @@
 <?php
 echo "Hello World!";
 echo "New Update!";
-echo "practice!";
 ?> 
 
 </body>
