@@ -7,6 +7,7 @@
 <?php
 echo "Hello World!";
 echo "New Update!";
+echo "credentials added!"
 ?> 
 
 </body>
