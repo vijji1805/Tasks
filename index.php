@@ -7,7 +7,7 @@
 <?php
 echo "Hello World!";
 echo "New Update!";
-> 
+?> 
 
 </body>
 </html>
